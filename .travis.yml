@@ -56,7 +56,7 @@ matrix:
 
     - os: osx
       osx_image: xcode9.3
-      env: TOOLCHAIN=ios-nocodesign-11-2-dep-9-3
+      env: TOOLCHAIN=ios-nocodesign-11-3-dep-9-3
 
     - os: osx
       osx_image: xcode9.3
