@@ -20,7 +20,7 @@ endif()
 
 set(
     HUNTER_PASSWORDS_PATH
-    "${CMAKE_CURRENT_LIST_DIR}/test_mix_1_sample_passwords.cmake"
+    "${CMAKE_CURRENT_LIST_DIR}/test_mix_1_passwords.cmake"
     CACHE
     FILEPATH
     "Hunter passwords"
