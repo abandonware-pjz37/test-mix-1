@@ -2,6 +2,7 @@ set(
     submodules
     RapidJSON
     websocketpp
+    folly
 )
 
 foreach(submodule ${submodules})
