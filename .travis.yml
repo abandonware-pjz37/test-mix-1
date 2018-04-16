@@ -45,10 +45,10 @@ matrix:
       env: TOOLCHAIN=android-ndk-r16b-api-21-arm64-v8a-neon-clang-libcxx14
 
     - os: linux
-      env: TOOLCHAIN=clang-cxx17
+      env: TOOLCHAIN=clang-cxx14
 
     - os: linux
-      env: TOOLCHAIN=gcc-7-cxx17
+      env: TOOLCHAIN=gcc-7-cxx14
 
     # }
 
