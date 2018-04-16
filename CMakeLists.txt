@@ -6,6 +6,7 @@ include("cmake/HunterGate.cmake")
 HunterGate(
     URL "https://github.com/ruslo/hunter/archive/v0.20.41.tar.gz"
     SHA1 "e8e77b69fc2ca66808091e781cc06bcb02724443"
+    LOCAL
 )
 
 project(test-mix-1)
@@ -15,3 +16,8 @@ find_package(ICU CONFIG REQUIRED)
 
 add_executable(boo boo.cpp)
 target_link_libraries(boo PUBLIC ICU::uc)
+
+hunter_add_package(RapidJSON)
+find_package(RapidJSON CONFIG REQUIRED)
+
+target_link_libraries(boo PUBLIC RapidJSON::rapidjson)
