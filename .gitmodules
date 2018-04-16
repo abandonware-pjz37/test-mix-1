@@ -1,9 +1,9 @@
 [submodule "third_party/RapidJSON"]
-	path = third_party/RapidJSON
-	url = git@github.com:hunter-packages/rapidjson
+  path = third_party/RapidJSON
+  url = https://github.com/hunter-packages/rapidjson
 [submodule "third_party/websocketpp"]
-	path = third_party/websocketpp
-	url = git@github.com:hunter-packages/websocketpp
+  path = third_party/websocketpp
+  url = https://github.com/hunter-packages/websocketpp
 [submodule "third_party/folly"]
-	path = third_party/folly
-	url = git@github.com:facebook/folly
+  path = third_party/folly
+  url = https://github.com/facebook/folly
