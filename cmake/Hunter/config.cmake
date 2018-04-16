@@ -1,6 +1,7 @@
 set(
     submodules
     RapidJSON
+    websocketpp
 )
 
 foreach(submodule ${submodules})

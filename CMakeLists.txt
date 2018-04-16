@@ -21,3 +21,7 @@ hunter_add_package(RapidJSON)
 find_package(RapidJSON CONFIG REQUIRED)
 
 target_link_libraries(boo PUBLIC RapidJSON::rapidjson)
+
+hunter_add_package(websocketpp)
+find_package(websocketpp CONFIG REQUIRED)
+target_link_libraries(boo PUBLIC websocketpp::websocketpp)
