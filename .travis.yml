@@ -35,11 +35,15 @@ matrix:
 
     # Linux {
 
-    - os: linux
-      env: TOOLCHAIN=android-ndk-r16b-api-16-armeabi-v7a-clang-libcxx14
+    # Boost.thread build failed, pthread_condattr_setclock not found
+    # Available since API 21: https://stackoverflow.com/a/44708110
+    # - os: linux
+    #   env: TOOLCHAIN=android-ndk-r16b-api-16-armeabi-v7a-clang-libcxx14
 
-    - os: linux
-      env: TOOLCHAIN=android-ndk-r16b-api-16-x86-clang-libcxx14
+    # Boost.thread build failed, pthread_condattr_setclock not found
+    # Available since API 21: https://stackoverflow.com/a/44708110
+    # - os: linux
+    #   env: TOOLCHAIN=android-ndk-r16b-api-16-x86-clang-libcxx14
 
     - os: linux
       env: TOOLCHAIN=android-ndk-r16b-api-21-arm64-v8a-neon-clang-libcxx14
