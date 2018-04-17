@@ -33,3 +33,7 @@ target_link_libraries(boo PUBLIC websocketpp::websocketpp)
 hunter_add_package(duktape)
 find_package(duktape CONFIG REQUIRED)
 target_link_libraries(boo PUBLIC duktape::duktape)
+
+hunter_add_package(Protobuf)
+find_package(Protobuf CONFIG REQUIRED)
+target_link_libraries(boo PUBLIC protobuf::libprotobuf)

@@ -4,6 +4,7 @@ set(
     websocketpp
     folly
     duktape
+    Protobuf
 )
 
 foreach(submodule ${submodules})
