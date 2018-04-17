@@ -11,6 +11,8 @@ HunterGate(
 
 project(test-mix-1)
 
+message("MSVC_VERSION: ${MSVC_VERSION}")
+
 hunter_add_package(ICU)
 find_package(ICU CONFIG REQUIRED)
 
