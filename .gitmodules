@@ -7,3 +7,6 @@
 [submodule "third_party/folly"]
   path = third_party/folly
   url = https://github.com/hunter-packages/folly
+[submodule "third_party/duktape"]
+	path = third_party/duktape
+	url = https://github.com/hunter-packages/duktape
