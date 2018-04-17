@@ -10,3 +10,6 @@
 [submodule "third_party/duktape"]
 	path = third_party/duktape
 	url = https://github.com/hunter-packages/duktape
+[submodule "third_party/Protobuf"]
+	path = third_party/Protobuf
+	url = https://github.com/hunter-packages/protobuf
