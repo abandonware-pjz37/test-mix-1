@@ -4,8 +4,8 @@ include("cmake/module/test_mix_1_upload_config.cmake")
 
 include("cmake/HunterGate.cmake")
 HunterGate(
-    URL "https://github.com/ruslo/hunter/archive/v0.20.43.tar.gz"
-    SHA1 "2e7546c3f5ced1c3e95cdc02cafee2a1c8b98b25"
+    URL "https://github.com/ruslo/hunter/archive/v0.20.44.tar.gz"
+    SHA1 "5a51c5fa3e2be7d1241d2b6405e197b9fe72333c"
     LOCAL
 )
 
@@ -26,6 +26,10 @@ hunter_add_package(websocketpp)
 find_package(websocketpp CONFIG REQUIRED)
 target_link_libraries(boo PUBLIC websocketpp::websocketpp)
 
-hunter_add_package(folly)
-find_package(folly CONFIG REQUIRED)
-target_link_libraries(boo PUBLIC Folly::folly)
+# hunter_add_package(folly)
+# find_package(folly CONFIG REQUIRED)
+# target_link_libraries(boo PUBLIC Folly::folly)
+
+hunter_add_package(duktape)
+find_package(duktape CONFIG REQUIRED)
+target_link_libraries(boo PUBLIC duktape::duktape)
