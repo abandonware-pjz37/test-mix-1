@@ -13,3 +13,6 @@
 [submodule "third_party/Protobuf"]
 	path = third_party/Protobuf
 	url = https://github.com/hunter-packages/protobuf
+[submodule "third_party/glog"]
+	path = third_party/glog
+	url = https://github.com/hunter-packages/glog
