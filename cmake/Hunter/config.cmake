@@ -5,6 +5,7 @@ set(
     folly
     duktape
     Protobuf
+    glog
 )
 
 foreach(submodule ${submodules})
