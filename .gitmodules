@@ -16,3 +16,7 @@
 [submodule "third_party/glog"]
 	path = third_party/glog
 	url = https://github.com/hunter-packages/glog
+[submodule "third_party/WebKit"]
+	path = third_party/WebKit
+	url = git@github.com:hunter-packages/WebKit
+	branch = hunter-0.0.2-6e4ced9
