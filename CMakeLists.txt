@@ -12,6 +12,7 @@ HunterGate(
 project(test-mix-1)
 
 set(skip_folly FALSE)
+set(skip_webkit FALSE)
 
 if(MSVC)
   string(COMPARE EQUAL "${MSVC_VERSION}" 1913 is_visual_studio_2017)
@@ -20,13 +21,20 @@ if(MSVC)
 
   if(is_visual_studio_2017)
     set(skip_folly FALSE)
+    set(skip_webkit FALSE)
   elseif(is_visual_studio_2015)
     set(skip_folly TRUE)
+    set(skip_webkit TRUE)
   elseif(is_visual_studio_2013)
     set(skip_folly TRUE)
+    set(skip_webkit TRUE)
   else()
     message(FATAL_ERROR "Unexpected Visual Studio version: '${MSVC_VERSION}'")
   endif()
+endif()
+
+if(IOS)
+  set(skip_webkit TRUE)
 endif()
 
 hunter_add_package(ICU)
@@ -51,6 +59,21 @@ else()
   hunter_add_package(folly)
   find_package(folly CONFIG REQUIRED)
   target_link_libraries(boo PUBLIC Folly::folly)
+endif()
+
+if(skip_webkit)
+  message("Skip 'WebKit' package")
+  target_compile_definitions(boo PUBLIC SKIP_WEBKIT)
+else()
+  hunter_add_package(WebKit)
+  find_package(WebKit CONFIG REQUIRED)
+  target_link_libraries(
+      boo
+      PUBLIC
+      WebKit::JavaScriptCore
+      WebKit::WTF
+      WebKit::bmalloc
+  )
 endif()
 
 hunter_add_package(duktape)
