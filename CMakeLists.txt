@@ -72,7 +72,6 @@ else()
       PUBLIC
       WebKit::JavaScriptCore
       WebKit::WTF
-      WebKit::bmalloc
   )
 endif()
 
