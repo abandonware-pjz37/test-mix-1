@@ -36,7 +36,7 @@ matrix:
     # Linux {
 
     - os: linux
-      env: TOOLCHAIN=android-ndk-r16b-api-16-armeabi-v7a-clang-libcxx14
+      env: TOOLCHAIN=android-ndk-r16b-api-16-armeabi-v7a-thumb-clang-libcxx14
 
     - os: linux
       env: TOOLCHAIN=android-ndk-r16b-api-16-x86-clang-libcxx14
