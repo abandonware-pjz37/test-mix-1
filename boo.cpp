@@ -3,6 +3,10 @@
 #include <websocketpp/version.hpp>
 #include <duktape.h>
 
+#if !defined(SKIP_PROTOBUF)
+# include <google/protobuf/message.h>
+#endif
+
 #if !defined(SKIP_FOLLY)
 # include <folly/Chrono.h>
 #endif
