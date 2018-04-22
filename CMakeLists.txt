@@ -37,6 +37,12 @@ if(IOS)
   set(skip_webkit TRUE)
 endif()
 
+string(COMPARE EQUAL "${CMAKE_SYSTEM_NAME}" "WindowsStore" is_windows_store)
+if(is_windows_store)
+  # FIXME
+  set(skip_folly TRUE)
+endif()
+
 hunter_add_package(ICU)
 find_package(ICU CONFIG REQUIRED)
 
