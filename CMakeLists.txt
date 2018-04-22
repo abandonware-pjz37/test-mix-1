@@ -4,8 +4,8 @@ include("cmake/module/test_mix_1_upload_config.cmake")
 
 include("cmake/HunterGate.cmake")
 HunterGate(
-    URL "https://github.com/ruslo/hunter/archive/c9f8c43ec1fd1d400c2dc6551f40795696f57239.zip"
-    SHA1 "333cc451cc088975cfc8217cdfc1c4e6922910ff"
+    URL "https://github.com/ruslo/hunter/archive/560b85efa16387a95d642a691a27c8e140fd3b20.zip"
+    SHA1 "dc2c79cf91f9ac7b4ca2ae4a3f91d98cb32f6ab2"
     LOCAL
 )
 
