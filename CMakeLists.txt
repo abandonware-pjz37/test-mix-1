@@ -40,7 +40,6 @@ endif()
 string(COMPARE EQUAL "${CMAKE_SYSTEM_NAME}" "WindowsStore" is_windows_store)
 if(is_windows_store)
   # FIXME
-  set(skip_folly TRUE)
   set(skip_webkit TRUE)
 endif()
 
